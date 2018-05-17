@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.qfedu</groupId>
+    <groupId>com.ninemilli</groupId>
     <artifactId>MyBoot</artifactId>
     <version>1.0</version>
 
@@ -59,4 +59,11 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+    <!--添加 Web 支持的 starter pom（包含 Spring Boot 的核心 starter —— Spring Boot Starter，入口类的 @SpringBootApplication 注解就是它提供的）-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 </project>
